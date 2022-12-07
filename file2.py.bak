@@ -1,7 +1,4 @@
-# from file2 import *
-import os 
 
-python2='''
 import sys    
 try:
     import pandas as pd 
@@ -47,35 +44,3 @@ try:
 except Exception as e:
     print e         
     print 'Error on line {}'.format(sys.exc_info()[-1].tb_lineno)
-'''
-
-
-myVar="file2"
-
-x = open (myVar+".py", "w")
-x.write(python2)
-x.close()
-
-
-# Run 2to3 file2.py
-
-
-
-# step1=assign a variable with python2 text
-# step2=make a file2.py with this text 
-# step3=convert with the 2to3 module within the code
-# step4= extract the text from the converted file
-
-python3=''' '''
-a="file2.py"
-filetoopen=open(a,'r')
-line=filetoopen.readline()
-
-while(line!=""):
-    # print(line)
-    python3=python3+line
-    line=filetoopen.readline()
-
-filetoopen.close()
-print (python3)
-
