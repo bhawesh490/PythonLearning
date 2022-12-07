@@ -1,0 +1,8 @@
+
+# myVar="Joe Smart"
+# x = open (myVar+".py", "w")
+
+# x.write("hello")
+# x.close()
+
+print "hello"
