@@ -16,7 +16,7 @@ try:
     from datetime import date,timedelta
     today = date.today() - timedelta(days=1)
     today_minus_8=date.today() - timedelta(days=8)
-    print today_minus_8
+    print(today_minus_8)
     
     last_seven_days=[]
     seven_forteen_days=[]
@@ -26,8 +26,8 @@ try:
     for i in range(8,15):
         seven_forteen_days.append(date.today() - timedelta(days=i))
     
-    print last_seven_days
-    print seven_forteen_days
+    print(last_seven_days)
+    print(seven_forteen_days)
     # outlet/date/camerano/
     # df=pd.DataFrame()
     datalist=[]
@@ -39,8 +39,8 @@ try:
         # print object_summary.key
         # break
         
-    print count
+    print(count)
         
 except Exception as e:
-    print e         
-    print 'Error on line {}'.format(sys.exc_info()[-1].tb_lineno)
+    print(e)         
+    print('Error on line {}'.format(sys.exc_info()[-1].tb_lineno))
