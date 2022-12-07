@@ -57,8 +57,8 @@ myVar="file2"
 x = open (myVar+".py", "w")
 x.write(python2)
 x.close()
-os.system("Echo Hello World")
-os.system("echo This is sample text > MyFile.txt")
+# os.system("Echo Hello World")
+# os.system("echo This is sample text > MyFile.txt")
 os.system("2to3 -w file2.py")
 # Note for Devops:Running this os.system(2to3 -w file2.py) command in virtual environment
 # Run 2to3 file2.py
